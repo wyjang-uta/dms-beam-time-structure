@@ -50,17 +50,12 @@ class DMSEventAction : public G4UserEventAction
   private:
     DMSRunAction* fRunAction;
     G4int currentBin;
-    G4double tlow[620];
-    G4double thigh[620];
-    G4double time[620];
-    G4int bin[620];
-    G4int binLimit[620];
-    /*
-    G4double fBunchDuration;
-    G4double fBunchInterval;
+    G4double fBunchDuration;    // pulse width
+    G4double fBunchInterval;    // pulse distance
     G4double fParticlesPerBunch;
-    G4int fNumberOfBunches;
-    */
+    G4int nNumberOfBunches;
+    G4int nPOT;
+    G4int nTimeSegments;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
